@@ -1,0 +1,46 @@
+import type { Idea } from "./types"
+
+export const ideas: Idea[] = [
+  {
+    id: "idea-unconscious",
+    slug: "unconscious-mind",
+    name: "Unconscious Mind",
+    brief: "Processes outside conscious awareness influencing thoughts and behavior.",
+    domain: "Clinical / Personality",
+    originators: ["freud", "jung"],
+    associatedSchools: ["psychoanalysis"],
+    tags: ["psychoanalysis", "mind"],
+    resources: {
+      articles: [{ title: "What Is the Unconscious?", url: "#" }],
+      videos: [{ title: "The Unconscious in 10 Minutes", url: "#" }],
+    },
+    similarities: ["defense-mechanisms"],
+    differences: ["classical-conditioning"],
+  },
+  {
+    id: "idea-conditioning",
+    slug: "classical-conditioning",
+    name: "Classical Conditioning",
+    brief: "Learning via association formed between stimuli.",
+    domain: "Learning",
+    originators: ["pavlov"],
+    associatedSchools: ["behaviorism"],
+    tags: ["learning", "behaviorism"],
+    resources: { articles: [{ title: "Classical Conditioning 101", url: "#" }], videos: [] },
+    similarities: [],
+    differences: ["unconscious-mind"],
+  },
+  {
+    id: "idea-defense",
+    slug: "defense-mechanisms",
+    name: "Defense Mechanisms",
+    brief: "Automatic psychological strategies to protect from anxiety and internal conflict.",
+    domain: "Personality / Clinical",
+    originators: ["freud"],
+    associatedSchools: ["psychoanalysis"],
+    tags: ["ego", "psychoanalysis"],
+    resources: { articles: [{ title: "Common Defense Mechanisms", url: "#" }], videos: [] },
+    similarities: ["unconscious-mind"],
+    differences: [],
+  },
+]
